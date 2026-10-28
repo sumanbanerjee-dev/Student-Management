@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Record Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Student Record Management System</h1>
+    <p id="date"></p>
+
+    <form id="studentForm">
+
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="course" placeholder="Course">
+        <input type="number" id="marks" placeholder="Marks">
+
+        <button type="submit">Add Student</button>
+
+    </form>
+
+    <br>
+
+    <input type="text" id="search" placeholder="Search Student">
+
+    <div class="buttons">
+        <button onclick="showAll()">All</button>
+        <button onclick="showPassed()">Passed</button>
+        <button onclick="showFailed()">Failed</button>
+        <button onclick="showJSON()">JSON</button>
+    </div>
+
+    <h3 id="average"></h3>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Course</th>
+                <th>Marks</th>
+                <th>Result</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="studentList"></tbody>
+
+    </table>
+
+    <pre id="jsonOutput"></pre>
+
+</div>
+
+<script src="JS/script.js"></script>
+
+</body>
+</html>
